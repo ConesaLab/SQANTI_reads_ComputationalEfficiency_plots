@@ -1,0 +1,4 @@
+sampleID,file_acc,classification_file,junction_file
+100000_1,100000_1,../analysis/SQANTI3_reports//100000_1/100000_1_reads_classification.txt,../analysis/SQANTI3_reports//100000_1/100000_1_junctions.txt
+100000_2,100000_2,../analysis/SQANTI3_reports//100000_2/100000_2_reads_classification.txt,../analysis/SQANTI3_reports//100000_2/100000_2_junctions.txt
+100000_3,100000_3,../analysis/SQANTI3_reports//100000_3/100000_3_reads_classification.txt,../analysis/SQANTI3_reports//100000_3/100000_3_junctions.txt

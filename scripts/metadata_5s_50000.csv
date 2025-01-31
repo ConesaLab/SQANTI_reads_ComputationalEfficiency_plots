@@ -1,0 +1,6 @@
+sampleID,file_acc,classification_file,junction_file
+50000_1,50000_1,../analysis/SQANTI3_reports//50000_1/50000_1_reads_classification.txt,../analysis/SQANTI3_reports//50000_1/50000_1_junctions.txt
+50000_2,50000_2,../analysis/SQANTI3_reports//50000_2/50000_2_reads_classification.txt,../analysis/SQANTI3_reports//50000_2/50000_2_junctions.txt
+50000_3,50000_3,../analysis/SQANTI3_reports//50000_3/50000_3_reads_classification.txt,../analysis/SQANTI3_reports//50000_3/50000_3_junctions.txt
+50000_4,50000_4,../analysis/SQANTI3_reports//50000_4/50000_4_reads_classification.txt,../analysis/SQANTI3_reports//50000_4/50000_4_junctions.txt
+50000_5,50000_5,../analysis/SQANTI3_reports//50000_5/50000_5_reads_classification.txt,../analysis/SQANTI3_reports//50000_5/50000_5_junctions.txt
