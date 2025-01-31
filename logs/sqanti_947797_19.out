@@ -1,0 +1,159 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+1000_5.gff
+1000_5
+/home/cmonzo/software/SQANTI3/sqanti3_qc.py:77: DeprecationWarning: Use shutil.which instead of find_executable
+  if distutils.spawn.find_executable(GTF2GENEPRED_PROG) is None:
+/home/cmonzo/software/SQANTI3/sqanti3_qc.py:80: DeprecationWarning: Use shutil.which instead of find_executable
+  if distutils.spawn.find_executable(GFFREAD_PROG) is None:
+/home/cmonzo/software/SQANTI3/sqanti3_qc.py:110: DeprecationWarning: Use shutil.which instead of find_executable
+  RSCRIPTPATH = distutils.spawn.find_executable('Rscript')
+Rscript (R) version 4.3.3 (2024-02-29)
+WARNING: Skipping ORF prediction because user requested it. All isoforms will be non-coding!
+WARNING: All input isoforms were predicted as non-coding
+**** Parsing Isoforms....
+**** RT-switching computation....
+Full-length read abundance files not provided.
+Isoforms expression files not provided.
+**** Writing output files....
+**** Generating SQANTI3 report....
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following object is masked from ‘package:gridExtra’:
+
+    combine
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, sort,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: splines
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following object is masked from ‘package:reshape’:
+
+    expand
+
+
+Attaching package: ‘plyr’
+
+The following objects are masked from ‘package:reshape’:
+
+    rename, round_any
+
+
+Attaching package: ‘plotly’
+
+The following objects are masked from ‘package:plyr’:
+
+    arrange, mutate, rename, summarise
+
+The following object is masked from ‘package:reshape’:
+
+    rename
+
+The following object is masked from ‘package:ggplot2’:
+
+    last_plot
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+The following object is masked from ‘package:graphics’:
+
+    layout
+
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:plyr’:
+
+    arrange, count, desc, failwith, id, mutate, rename, summarise,
+    summarize
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    combine, intersect, setdiff, union
+
+The following object is masked from ‘package:gridExtra’:
+
+    combine
+
+The following object is masked from ‘package:reshape’:
+
+    rename
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.
+ℹ Please use the `linewidth` argument instead. 
+Warning message:
+Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead. 
+Warning message:
+A numeric `legend.position` argument in `theme()` was deprecated in ggplot2
+3.5.0.
+ℹ Please use the `legend.position.inside` argument of `theme()` instead. 
+`summarise()` has grouped output by 'lenCat'. You can override using the
+`.groups` argument.
+Error in `[.data.frame`(t3.a.SJ, , c(1, 5, 6)) : 
+  undefined columns selected
+Calls: rbind ... standardGeneric -> eval -> eval -> eval -> [ -> [.data.frame
+Execution halted
+Write arguments to /storage/gge/cmonzo/testing_sqanti_reads/analysis/SQANTI3_reports/1000_5/1000_5.params.txt...
+**** Running SQANTI3...
+**** Parsing provided files....
+Reading genome fasta /storage/gge/genomes/human/Homo_sapiens.GRCh38.dna.primary_assembly.fa....
+Skipping aligning of sequences because GTF file was provided.
+
+Indels will be not calculated since you ran SQANTI3 without alignment step (SQANTI3 with gtf format as transcriptome input).
+**** Predicting ORF sequences...
+**** Parsing Reference Transcriptome....
+Splice Junction Coverage files not provided.
+**** TSS ratio will not be calculated since SR information was not provided
+**** Performing Classification of Isoforms....
+Number of classified isoforms: 380
+Traceback (most recent call last):
+  File "/home/cmonzo/software/SQANTI3/sqanti3_qc.py", line 2627, in <module>
+    main()
+  File "/home/cmonzo/software/SQANTI3/sqanti3_qc.py", line 2610, in main
+    run(args)
+  File "/home/cmonzo/software/SQANTI3/sqanti3_qc.py", line 2147, in run
+    if subprocess.check_call(cmd, shell=True)!=0:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cmonzo/.conda/envs/SQANTI3.env/lib/python3.11/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '/home/cmonzo/.conda/envs/SQANTI3.env/bin/Rscript /home/cmonzo/software/SQANTI3/utilities//report_qc/SQANTI3_report.R /storage/gge/cmonzo/testing_sqanti_reads/analysis/SQANTI3_reports/1000_5/1000_5_classification.txt /storage/gge/cmonzo/testing_sqanti_reads/analysis/SQANTI3_reports/1000_5/1000_5_junctions.txt /storage/gge/cmonzo/testing_sqanti_reads/analysis/SQANTI3_reports/1000_5/1000_5.params.txt /home/cmonzo/software/SQANTI3/utilities False html' returned non-zero exit status 1.

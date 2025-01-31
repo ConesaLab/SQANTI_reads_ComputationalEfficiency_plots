@@ -1,0 +1,76 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+no change     /storage/apps/ANACONDA/anaconda3_2023/condabin/conda
+no change     /storage/apps/ANACONDA/anaconda3_2023/bin/conda
+no change     /storage/apps/ANACONDA/anaconda3_2023/bin/conda-env
+no change     /storage/apps/ANACONDA/anaconda3_2023/bin/activate
+no change     /storage/apps/ANACONDA/anaconda3_2023/bin/deactivate
+no change     /storage/apps/ANACONDA/anaconda3_2023/etc/profile.d/conda.sh
+no change     /storage/apps/ANACONDA/anaconda3_2023/etc/fish/conf.d/conda.fish
+no change     /storage/apps/ANACONDA/anaconda3_2023/shell/condabin/Conda.psm1
+no change     /storage/apps/ANACONDA/anaconda3_2023/shell/condabin/conda-hook.ps1
+no change     /storage/apps/ANACONDA/anaconda3_2023/lib/python3.11/site-packages/xontrib/conda.xsh
+no change     /storage/apps/ANACONDA/anaconda3_2023/etc/profile.d/conda.csh
+no change     /home/cmonzo/.bashrc
+No action taken.
+metadata_3s_1000000.csv
+Analyzing chromosomes:
+['1', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '2']
+Analyzing chromosomes:
+['1', '10', '11']
+Analyzing chromosomes:
+['1', '10', '11']
+/home/cmonzo/software/SQANTI3/utilities/sqanti_reads_tables_and_plots_02ndk.py:666: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  ujc_DF['total_jxns'] = ujc_DF[['known_canonical', 'known_non_canonical', 'novel_canonical', 'novel_non_canonical']].sum(axis=1)
+/home/cmonzo/software/SQANTI3/utilities/sqanti_reads_tables_and_plots_02ndk.py:712: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  gene_categories = grouped.apply(categorize_gene)
+/home/cmonzo/software/SQANTI3/utilities/sqanti_reads_tables_and_plots_02ndk.py:781: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['Putative Unannotated'] = df.apply(
+/home/cmonzo/software/SQANTI3/utilities/sqanti_reads_tables_and_plots_02ndk.py:781: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['Putative Unannotated'] = df.apply(
+/home/cmonzo/software/SQANTI3/utilities/sqanti_reads_tables_and_plots_02ndk.py:781: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['Putative Unannotated'] = df.apply(
+/home/cmonzo/software/SQANTI3/utilities/sqanti_reads_tables_and_plots_02ndk.py:1026: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  cv_don_summary = cv_don_DF.groupby(['sampleID',exp_factor]).apply(
+/home/cmonzo/software/SQANTI3/utilities/sqanti_reads_tables_and_plots_02ndk.py:1035: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  cv_acc_summary = cv_acc_DF.groupby(['sampleID',exp_factor]).apply(
+/home/cmonzo/software/SQANTI3/utilities/sqanti_reads_tables_and_plots_02ndk.py:2137: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+/home/cmonzo/.conda/envs/SQANTI3.env/lib/python3.11/site-packages/pandas/plotting/_matplotlib/core.py:580: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  fig = self.plt.figure(figsize=self.figsize)
+/home/cmonzo/software/SQANTI3/utilities/sqanti_reads_tables_and_plots_02ndk.py:2498: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  plt.figure(figsize=(10, 6))
+Loading junction file: 1000000_1
+Loading classification file: 1000000_1
+1000000_1 done processing
+Memory cleared for next sample
+Loading junction file: 1000000_2
+Loading classification file: 1000000_2
+1000000_2 done processing
+Memory cleared for next sample
+Loading junction file: 1000000_3
+Loading classification file: 1000000_3
+1000000_3 done processing
+Memory cleared for next sample
+**** Calculating UJCs...
+**** Calculating UJCs...
+**** Calculating UJCs...
+Completed %A_%a for metadata_3s_1000000.csv
+ in 218 seconds
